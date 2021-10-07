@@ -1,0 +1,2635 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+
+            <input type="text" id="myCustomSearchBox" class="form-control" style="font-size: 24px; border-radius: 10px;"
+                placeholder="Qual o nome do produto que você deseja pesquisar?">
+        </div>
+    </div>
+    <table id="dadosprod" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Código Brazmix</th>
+                <th>Descrição</th>
+                <th>Linha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6</td>
+                <td>COMPRESSA 10X10 C/10 13F PREMIUM AMERICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>HYSTIN DEXCLORFENIRAMINA SOL 0,4MG/ML 120ML GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>TESTE DE UREASE LIQUIDO C/25 UNIDADES LUCKMANN</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>LORATADINA (G) 1MG/ML XP 100ML GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>DEXCLORFERINAMINA+ BETAM 0,04MG/ML+0,05MG/ML (G) XPE 120ML GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>TENOXICAM (G) 20MG C/10 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>IBUVIX IBUPROFENO 600MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>GLIBENCLAMIDA (G) 5MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>ITRACONAZOL (G) 100MG C/15 CPS GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>OMENAX OMEPRAZOL 40MG C/28 CPS GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>STOMALIV GUARANA C/50 ENV GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>TADALAFILA (G) 20MG C/2 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>LAMINA BISTURI CARB N24 C/100 ADVANTIVE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>LAMINA BISTURI CARB N20 C/100 ADVANTIVE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>TADALAFILA (G) 20MG C/4 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>SONDA ENDOTRAQUEAL 6,5 C/BL RUSCH</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>SONDA ENDOTRAQUEAL 6,0 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>SONDA ENDOTRAQUEAL 8,0 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>SONDA ENDOTRAQUEAL 8,5 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>SONDA ENDOTRAQUEAL 9,5 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>SONDA ENDOTRAQUEAL 9,0 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>SONDA ENDOTRAQUEAL 7,0 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>SONDA ENDOTRAQUEAL 4,0 C/BL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>TINIDAZOL+NIT MICONAZOL (G) CR VAG 45G GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>CIXIN COLCHICINA 0,5MG C/20 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>OMENAX OMEPRAZOL 20MG C/56 CPS GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>ALBENDAZOL SUSP 40MG/ML 10ML GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>CISTEIL ACETILCISTEINA 600MG CX C/16 ENV GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>ESCITALOPRAM (G) 20MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>CATETER JELCO 18G 32MM SMITHS MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>CATETER JELCO 22G SMITHS MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>SERINGA INSULINA 100UI AG 8MM X 0,30 PT SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>AGULHA DESC. 13X4,5 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>AGULHA DESC. 25X6 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>AGULHA DESC. 30X7 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>AGULHA DESC. 20X5,5 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>AGULHA DESC. 40X16 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>AGULHA DESC. 25X8 C/100UN SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>APAXY 300MG PASSIFLORA CX C/20 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>DOSADOR ORAL 10ML AZUL INJEX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>SERINGA INSULINA 1ML C/AG 13X4,5 LS SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>DOSADOR ORAL 5ML AZUL INJEX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>DOSADOR ORAL 3ML AZUL INJEX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>EQUIPO MACROGOTAS COMPLETO V EMA 06 C/INJ TKL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>AVENTAL S/MANGA AZUL GR30 KAMICON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>CATETER 18G SOLIDOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>ALMOTOLIA MARRON AMBAR 250ML J PROLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>ALMOTOLIA MARROM AMBAR 500ML J PROLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>PORTA LAMINA P/ CITOLOGIA C/3 J PROLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>PINCA CHERON N/ESTERIL VAGISPEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>ESPECULO VAGINAL (G) N/E N/LUB VAGISPEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>ESPECULO VAGINAL (M) N/E N/LUB VAGISPEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>ESPECULO VAGINAL (P) N/E N/LUB VAGISPEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>LUVA CIRURGICA ESTERIL 7,0 MEDFEEL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>LUVA CIRURGICA ESTERIL 8,0 MEDFEEL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>ELETRODO PRECORDIAL UNID PRATA GLOBALTEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>ELETRODO FIXO DE PRATA C/6 GLOBALTEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>DISCO ADESIVO FACE UNICA C/500 GLOBALTEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>PROMETAZINA PROMETAZOL C/100 25MG/ML AMP 2ML IM SANVAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>RIFAMICINA SV SODICA RIFOTRAT 100MG/20ML SPRAY NATULAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>AGULHA ASPIRACAO 1,2X25 C/100 SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>TEICOPLANINA TEIPLAN 200MG C/1 FR/AMP + DIL 3ML EV/IM UNIAO QUIMICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>ACET DEXAMETASONA CREME 10G GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>IBUPROFENO (G) 100MG/ML 20ML GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>NIT MICONAZOL (G) CR DERM 20MG/G 28G GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>NIT MICONAZOL (G) CR VAG C/14 APLIC 20MG/G 80G GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>98</td>
+                <td>MERHEJE PINCEL SOMBRA/ILUMINADOR CURVEX</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>SCALP C/DISP SEG 25G C/100 DESCARPACK</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>CATETER JELCO 24G SMITHS MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>BALDE 8 LT PLASUTIL</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>CAMPO OPERATORIO 10X9 C/5 EST C/RX SOFT AMERICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>PANO DE CHAO 48X68CM BRUNO</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>114</td>
+                <td>AGUA SANITARIA 1L QBOA</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>116</td>
+                <td>PURIFICADOR DE AR BOM AR DIVERSOS REFIL 12 ML</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>117</td>
+                <td>ESTRIOL CR C/APLI BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>SUCCINATO SUMATRIPTANA 50MG C/2 BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>121</td>
+                <td>RHAMICAL CAR D CALCIO 500MG C/10</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>ACIDO VALPROICO (G) 250MG C/25 CPS BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>128</td>
+                <td>EJOY BARRA CEREAL ORIGINAL 30G C/12</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>129</td>
+                <td>EJOY BARRA CEREAL PROTEINA CRAMBERRY 35G C/12</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>130</td>
+                <td>OMENAX OMEPRAZOL 20MG 28CPS GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>131</td>
+                <td>ETIQUETA COUCHE ADESIVA 100 X 150 1RL 274</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>132</td>
+                <td>ACIDO PERACETICO 0,2% PRONTO USO GL 5L GROW</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>135</td>
+                <td>SONDA ENDOBRONQUEAL EQ N35 C/CARINA BCI MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>136</td>
+                <td>SONDA ENDOBRONQUEAL EQ N39 C/CARINA BCI MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>138</td>
+                <td>SONDA ENDOBRONQUEAL EQ N41 C/CARINA BCI MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>139</td>
+                <td>SONDA ENDOBRONQUEAL DR N41 C/CARINA BCI MEDICAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>140</td>
+                <td>SCALP 23G C/100 DESCARPACK</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>143</td>
+                <td>AGUA INGLESA 500ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>145</td>
+                <td>BALSAMO BRANCO 30ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>146</td>
+                <td>CAMOMILA LIQ 150ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>147</td>
+                <td>CANFORA 150G C/200 CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>148</td>
+                <td>CATUAMA 500ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>ELIXIR PAREGORICO 30ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>151</td>
+                <td>FIGATIL 10ML C/48 CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>152</td>
+                <td>DISPENSER PAPEL LENCOL 70CM AC13</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>153</td>
+                <td>FIGATIL C/20 DRG CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>155</td>
+                <td>FIGATIL LIQ 150ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>162</td>
+                <td>GINKGO BILOBA C/30 CPR CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>164</td>
+                <td>MELAGRIAO PASTILHA LARANJA CX C/24 X 5 CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>165</td>
+                <td>MELAGRIAO PROPOLIVE 30ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>166</td>
+                <td>MELAGRIAO SPRAY LARANJA 30ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>167</td>
+                <td>MELAGRIAO XPE 150ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>168</td>
+                <td>PHYTOVEIN C/45 CPS CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>169</td>
+                <td>SADOL 400ML CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>171</td>
+                <td>SAL AMARGO 15G C/50 CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>172</td>
+                <td>ACET. METILPREDNISOLONA PREDI-MEDROL 40MG/ML CX C/1 F/A 2ML UNIAO QUIMICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>174</td>
+                <td>UNIFABRA POLIVITAMINICO A-Z C/30 CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>176</td>
+                <td>UNIFABRA CAFEINA 210MG C/60CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>178</td>
+                <td>UNIFABRA CLORETO MAGNESIO P.A C/60 CPR</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>179</td>
+                <td>UNIFABRA COLAGENO HIDROLISADO 120 CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>181</td>
+                <td>UNIFABRA OLEO DE CARTAMO C/60 CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>182</td>
+                <td>UNIFABRA OLEO DE LINHACA 100MG C/60 CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>183</td>
+                <td>VITAMINA E C/30 CPS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>184</td>
+                <td>CATGUT CROMADO 2-0 C/AG 4,0 MT C420MT40 C/24 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>185</td>
+                <td>CATGUT CROMADO 3-0 C/AG 2,5 MR C430MR25 C/24 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>187</td>
+                <td>CATGUT CROMADO 1 C/AG 4,0 MR C401MR40 C/24 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>188</td>
+                <td>CATGUT CROMADO 0 C/AG 3,0 MR C400MR30 C/24 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>189</td>
+                <td>POLIGLACTINA 1 C/AG 3,5 MR C/36 L501MR35 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>190</td>
+                <td>BUT ESCOPOLAMINA (G) 20MG/ML 1ML HIPOLABOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>191</td>
+                <td>POLIGLACTINA 2-0 C/AG 3,0 CR C/36 L520CR30 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>194</td>
+                <td>POLIGLACTINA 3-0 C/AG 3,0 CR C/36 L530CR30 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>196</td>
+                <td>LUVA VINIL (P) SEM PO C/100 MAXICOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>197</td>
+                <td>FITA TESTE ACIDO PERACETICO C/30 GROW</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>198</td>
+                <td>PROPRANOLOL (G) 10MG C/30 MEDLEY</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>199</td>
+                <td>COLETOR UNIVERSAL EST 80ML PCT/100 TAMPA VERMELHA NJ PLASTICOS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>GEL HIGIENIZANTE 460G BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>KIT SABONETE INTIMO 200ML PACK C/2 BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>203</td>
+                <td>SABONETE LIQ ERVA DOCE 480ML BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>GEL ARNICA SPORT 120G BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>206</td>
+                <td>GEL ARNICA 240ML BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>207</td>
+                <td>HIDRATANTE CORP AMENDOAS DOCE 200ML BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>208</td>
+                <td>NYLON 3-0 AG 2,0 CT C/24 N530CT20 (SERTIX) SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>211</td>
+                <td>CLOR SERTRALINA (G) 100MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>215</td>
+                <td>CLOR SERTRALINA (G) 50MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>218</td>
+                <td>CLONAZEPAM (G) 2MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>219</td>
+                <td>CLOR CICLOBENZAPRINA (G) 10MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>220</td>
+                <td>CLOR CIPROFLOXACINO (G) 500MG C/14 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>221</td>
+                <td>CLOR TANSULOSINA (G) 0,4MG CX C/60 GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>223</td>
+                <td>ESPIRONOLACTONA (G )25MG C/30 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>224</td>
+                <td>FLUCONAZOL (G) 150MG C/ 1 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>225</td>
+                <td>FLUCONAZOL (G) 150MG C/2 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>226</td>
+                <td>FUROSEMIDA (G) 40MG C/20 GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>228</td>
+                <td>FRASCO P/ AMOS + TAMPA LACRE 90ML BRANCO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>229</td>
+                <td>LEVOFLOXACINO (G) 500MG C/7 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>231</td>
+                <td>TADALAFILA (G) 20MG C/1 CPR GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>232</td>
+                <td>TYLALGIN PARACETAMOL 750MG C/20 GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>233</td>
+                <td>OLINA ESSENCIA DE VIDA 100ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>235</td>
+                <td>AGULHA DESC 25X7 C/100 C/DISP. SEGURANCA SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>238</td>
+                <td>LIB MODELADOR SEIOS PLUS C/2 PARES TAM 42</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>240</td>
+                <td>CR ALISANTE VINTAGE GIRLS 100G LOLA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>243</td>
+                <td>COND CAMOMILA 250ML LOLA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>244</td>
+                <td>COND MEU CACHO MINHA VIDA 500G LOLA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>245</td>
+                <td>CREME RUGOL TRAD 50G</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>247</td>
+                <td>ROSA MOSQUETA 10ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>248</td>
+                <td>VIT CAPILAR HIDRO COLAG C/4 5,5ML DERMABEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>249</td>
+                <td>ONDANSETRONA (G) 2MG/ML 4ML IM/IV C/50 HYPOFARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>250</td>
+                <td>NYLON 3-0 AG 3,0 3/8 C/24 N730CTS30 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>251</td>
+                <td>NYLON 3-0 AG 2,0 3/8 C/24 N730CTS20 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>252</td>
+                <td>CATGUT SIMPLES 3-0 C/AG 2,5 1/2 75CM C/24 S330MR25 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>253</td>
+                <td>AGUA P/ AUTOCLAVE 5L PROLINK</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>254</td>
+                <td>LIDOCAINA HYPOCAINA 2% S/V 20MG/ML C/100 AMP 5ML HYPOFARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>255</td>
+                <td>LOSARTANA+HIDRO 100+25MG C/30 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>260</td>
+                <td>ZOLPIDEM (G) 10MG C/20 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>262</td>
+                <td>SEVOFLURANO VOFLUR 250ML UNIÃO QUIMICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>263</td>
+                <td>LAMOTRIGINA (G) 50MG C/30 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>264</td>
+                <td>GALANTAMINA (G) 8MG C/30 CPS BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>266</td>
+                <td>ABSORVENTE MASC C/10 DRYMAN</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>267</td>
+                <td>BIBS AMENDOIM 40G CX C/18 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>268</td>
+                <td>BIBS COPO AMENDOIM 180G NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>269</td>
+                <td>BIBS BARRA AO LEITE 12,3G C/32 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>270</td>
+                <td>BIBS AO LEITE POUCH 120G NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>271</td>
+                <td>STIKADINHO MORANGO 12,3G C/32 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>272</td>
+                <td>STIKADINHO MORANGO 70G C/12 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>273</td>
+                <td>BARRA NAPOLITANO 70G C/12 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>274</td>
+                <td>BARRA COM COOKIES 90G C/14 NEUGEBAUER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>275</td>
+                <td>NYLON 4,0 AG.1,5 45CM C/24 N540MT15 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>277</td>
+                <td>JOELHEIRA ESPORTE C/ORIFICIO REFORCO (M) MERCUR</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>278</td>
+                <td>CAIXA PERSONALIZADA LARANJA</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>281</td>
+                <td>AGIL C VITAMINA C C/10 CPR EFERV PHARLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>282</td>
+                <td>CITALOPRAM 20MG (G) C/28 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>284</td>
+                <td>FLEXENEMA 130ML SOL RETAL AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>286</td>
+                <td>CAIXA PAPELAO AMPOLA</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>288</td>
+                <td>SONDA ENTRISTAR 16FR X 2,7CM COVIDIEN</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>289</td>
+                <td>TONER SAMSUMG D203U</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>292</td>
+                <td>FILMES DE TERMO TRANSFERENCIA - 110MMX450M G40 OUT</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>293</td>
+                <td>ENVELOPE SACO BRANCO 370X450 90GRS 4500 CX C/250</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>295</td>
+                <td>DESINF LIQ GIRANDO SOL 21 EUCALIPTO</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>297</td>
+                <td>PURIF AR B AR CLICK REF 12ML CH LIMPEZA</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>298</td>
+                <td>PURIF AR B AR CLICK REF 12ML CH TALCO</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>PURIF AR B AR CLICK REF 12ML FLORES JAS</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>PURIF AR B AR CLICK REF 12ML FRESC CAMP</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>303</td>
+                <td>PURIF AE B AR CLICK REF 12ML LAVANDA</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>308</td>
+                <td>MDF ARAUCO BCO REAL TX 15MM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>309</td>
+                <td>MOUSE PAD GEL PRETO C/APOIO</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>310</td>
+                <td>SUPORTE ERGONOMICO P/PES BLACK PIANO</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>311</td>
+                <td>SUPORTE PARA MONITOR 2GAVETAS 38X25X11 MDF BLACK</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>314</td>
+                <td>LACRE PARA MALOTE LARANJA PP ESCADA 23CM PCT C/10</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>316</td>
+                <td>CATETER ANGIOCATH 16G REF- 388330 BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>317</td>
+                <td>PRODUTOS DIVERSOS</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>319</td>
+                <td>CARGA GILLETTE MACH3 C/2</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>321</td>
+                <td>FRALDA TENA CONFORT P C/30 UNDS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>323</td>
+                <td>ALCOOL GEL 255G REALGEMS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>325</td>
+                <td>MASCARA PFF2 S/V SUPERMEDY</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>330</td>
+                <td>HIPOCLORITO DE SÓDIO 1% CLORO VIC 5L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>331</td>
+                <td>LANTERNA CLINICA PREMIM</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>332</td>
+                <td>SONDA ENDOTRAQUEAL 3.0 C/BALAO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>333</td>
+                <td>VITAMINA C C/60 CPS APISNUTRI</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>334</td>
+                <td>PVPI 10% DEGERMENTE TOPICO 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>335</td>
+                <td>AGULHA C/DISP SEG 25X5 C/100 BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>336</td>
+                <td>GEL PARA ECG 100G VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>337</td>
+                <td>GEL PARA ELETRODO 100G VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>339</td>
+                <td>CLOREXIDINA 4% DEGERMANTE 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>341</td>
+                <td>ALCOOL 70% 100ML GLICERINADO CLEAN VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>342</td>
+                <td>CLOREXIDINA 1% TOPICO 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>343</td>
+                <td>QUATERNÁRIO DE AMÔNIO 0,68% 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>344</td>
+                <td>HIPOCLORITO DE SÓDIO 1% CLORO VIC 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>345</td>
+                <td>AGUA OXIGENADA 10 VOLUMES 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>346</td>
+                <td>TINTURA DE BENJOIN 20% TOPICA 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>347</td>
+                <td>VASELINA LIQUIDA TOPICO 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>348</td>
+                <td>PVPI TOPICO TINTURA ALCOÓLICA 10% TOPICA VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>349</td>
+                <td>DETERGENTE VIC 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>350</td>
+                <td>DETERGENTE ANTIFERRUGNOSO OXI REMOV 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>351</td>
+                <td>VIC GLUTARAL CLEAR GLUTARALDEIDO 2,2% 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>352</td>
+                <td>ACIDO PERACETICO 0,2% 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>353</td>
+                <td>QUATER POLI BIGUANIDA+QUATERNARIO DE AMONIO 750ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>354</td>
+                <td>AGULHA DESC 30X8 C/100 UND SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>355</td>
+                <td>SERINGA INSULINA 0,5ML C/AG 8X0,33 C/10 SR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>357</td>
+                <td>LUVA NITRILICA (G) C/100 AZUL TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>358</td>
+                <td>METRONIDAZOL 5% BOLSA SF 100ML HALEXISTAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>360</td>
+                <td>MS MASCARA PFF2 S/V 19850 PLASMIX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>362</td>
+                <td>ABCLER 10ML SOL C/50 AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>363</td>
+                <td>AFTANAX 25ML SOL AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>364</td>
+                <td>CALMAZIL VALERIANA 215MG C/30 CPS AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>365</td>
+                <td>CETOP CETOCONAZOL SH 100ML AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>366</td>
+                <td>FORTEVIT SOL 500ML AIRELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>367</td>
+                <td>GRIPALCE C/20 CPS BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>368</td>
+                <td>PHITOSS HEDERA 7MG//ML XPE 100ML BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>369</td>
+                <td>GLICEL PEDIATRICO SUP C/6 BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>370</td>
+                <td>GLICEL ADULTO SUP C/6 BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>371</td>
+                <td>GRIPALCE C/20X10 CPS BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>372</td>
+                <td>CONAZOL CETOCONAZOL CR 20G BRASTERAPICA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>377</td>
+                <td>ALCOOL 70% 1 LT CAPRICHO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>378</td>
+                <td>METOPROLOL 25MG (G) C/30 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>379</td>
+                <td>METOPROLOL 50MG (G) C/30 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>380</td>
+                <td>METOPROLOL 100MG (G) C/30 CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>381</td>
+                <td>PROTETOR FACIAL COM HASTE INJETADA AZBEAUTY</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>382</td>
+                <td>MASCARA POLIESTER 100% ALGODAO MIME</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>383</td>
+                <td>ESTOJO ALMA FLORES CLASSICO C/3 SAB MEMPHIS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>384</td>
+                <td>TALCO ALMA DE FLORES CLASSICO 100G MEMPHIS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>386</td>
+                <td>DES SPRAY SENADOR CLASSICO 90ML MEMPHIS</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>387</td>
+                <td>MS MASCARA DUPLA 40G ELASTICO 50UN MCS BRAZMIX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>388</td>
+                <td>ALCOOL GEL 70% 850G PUMP VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>389</td>
+                <td>ALCOOL GEL 70% 430G VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>390</td>
+                <td>MS MASCARA SMMMS DESC TIRAS C/50 AJM</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>392</td>
+                <td>MS MASCARA TRIPLA C/TIRAS C/50 REALDESC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>393</td>
+                <td>LUVA VINIL SEM PO (P) C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>394</td>
+                <td>LUVA PROC LATEX (PP) C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>397</td>
+                <td>TAMPA P/CATETER LL C/1 BRANCA VITALGOLD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>398</td>
+                <td>LEITE NAN CONFOR 1 800G CX C/6 NESLTE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>MS MASCARA DUPLA C/50 60G C/ELASTICO PLASMIX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>ALCOOL GEL GLICERINADO 450G GERM-X</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>402</td>
+                <td>MS MASCARA TRIPLA C/ELASTICO C/50 RW</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>403</td>
+                <td>DESINFETANTE LIQUIDO PINHO BRIL 500ML</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>PANO COPA FELPUDO FLABOM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>405</td>
+                <td>CATGUT SIMPLES 0 C/AG 3,5 1/2 75CM C/24 S300MR35 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>406</td>
+                <td>POLIPROPILENO 3-0 2AG.2,5CM 75CM C/24 P302MRV25 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>407</td>
+                <td>IMIPENEM+CILASTATINA 500MG+500MG C/10 FR/AMP I.V NOVAFARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>408</td>
+                <td>BUCHA VEGETAL GRANDE CHAMEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>409</td>
+                <td>BUCHA VEGETAL PEQUENA CHAMEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>410</td>
+                <td>CHAMEL 20G MACELA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>411</td>
+                <td>CHAMEL 30G CAVALINHA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>412</td>
+                <td>CHAMEL 30G ERVA CIDREIRA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>413</td>
+                <td>CHAMEL 30G ESPINHEIRA SANTA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>414</td>
+                <td>CHAMEL 30G QUEBRA PEDRA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>415</td>
+                <td>CHAMEL 50G ERVA DOCE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>416</td>
+                <td>BOLSA PEQUENA TERMOGEL</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>417</td>
+                <td>BOLSA GRANDE TERMOGEL</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>418</td>
+                <td>ALCOOL GEL 70% 800G REFIL VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>419</td>
+                <td>CINTURÃO VICSA 4 PONTOS 20529</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>420</td>
+                <td>TALABARTE DUPLO VICSA VIC-23605</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>421</td>
+                <td>SERINGA DESC 10ML LL C/AG BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>422</td>
+                <td>LUVA VINIL (P) C/100 C/PO TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>423</td>
+                <td>LUVA PROC LATEX (PP) C/100 PROFIS S/PÓ TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>424</td>
+                <td>LUVA PROC LATEX (M) C/100 PROFIS S/PÓ TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>427</td>
+                <td>SONDA GASTRICA LEVINI 20 MEDSONDA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>428</td>
+                <td>ETIQUETA ADESIVA 7X10CM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>429</td>
+                <td>SAPATA NIQUELADA 20MM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>431</td>
+                <td>CAIXA DE PAPELÃO 30 X 30 X 17</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>432</td>
+                <td>DETERGENTE MULTIENZIMATICO INDAZYME 5L INDALABOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>433</td>
+                <td>LUVA VINIL (P) C/100 S/PÓ TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>434</td>
+                <td>LUVA VINIL (G) C/100 S/PÓ TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>442</td>
+                <td>DESINFETANTE LAVANDA 2L SCARLIM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>443</td>
+                <td>DESINFETANTE PINHO 2L SUPER CLEAN</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>444</td>
+                <td>ACUCAR REFINADO ALTO ALEGRE 1KG</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>445</td>
+                <td>LIMPA VIDROS LIMPOL 3EM1 SQZ 500ML</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>446</td>
+                <td>SAPOLIO RADIUM CREM 250 ML</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>447</td>
+                <td>EQUIPO MACROGOTAS PCT C/25 POLI COMPLETO T EMA C/INJ TKL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>449</td>
+                <td>SONDA GASTRICA LEVINE N20 BIOSANI</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>450</td>
+                <td>ADAPTADOR PONTA PERF LS C/TAMPA BIOSANI</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>451</td>
+                <td>LUVA PROC LATEX (P) C/100 PROFISS C/PÓ TALGE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>452</td>
+                <td>TOUCA DESC C/ ELASTICO C/100 SANFONADA SCARTARE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>453</td>
+                <td>SAPATILHA DESCARTAVEL 100UN SCARTARE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>454</td>
+                <td>DES ROLLON UNISSEX 50ML RED APLE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>455</td>
+                <td>ETIQUETA COUCHE ADESIVA 105X35X1ML</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>456</td>
+                <td>PAPEL A4 75G 500FLS AUTOPAPER</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>457</td>
+                <td>BOBINA TS KPH AM 80X40M AUTOPEL</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>458</td>
+                <td>LENCOL C/ELASTICO 20GR 2,00X0,90 C/10 JARC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>459</td>
+                <td>HIPOCLORITO DE SODIO 12% 5L QUIMIBEL</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>460</td>
+                <td>VASSOURA NOVICA C/CABO BETTANIN</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>463</td>
+                <td>ESPONJA ESFREBOM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>464</td>
+                <td>PANO DE LIMPESA CHÃO FLABOM FAVO</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>465</td>
+                <td>CLOR MEMANTINA (G) 10MG 60CPR BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>467</td>
+                <td>LUVA PROC LATEX (M) C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>468</td>
+                <td>LUVA PROC LATEX (G) C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>469</td>
+                <td>PREDNISOLONA (G) 5MG C/20 CMP ALTHAIA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>470</td>
+                <td>ALCA CALIBRADA 1UL ESTERIL C/100 AZUL LABOR IMPORT</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>472</td>
+                <td>PROTESE TUBO DE VENTILAÇÃO 1021 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>473</td>
+                <td>SONDA ALIMENTACAO ENTERAL 10FR 5003 POLIURETANO MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>474</td>
+                <td>SONDA ALIMENTACAO ENTERAL 12FR 5004 POLIURETANO MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>475</td>
+                <td>TUBO SILICONE 6 X12MM N/ESTERIL 15M 204 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>476</td>
+                <td>TUBO SILICONE 8 X14MM N/ESTERIL 15M 207 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>477</td>
+                <td>TUBO SILICONE 9,5 X14,6MM N/ESTERIL 15M 208 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>478</td>
+                <td>SONDA ALIMENTACAO ENTERAL 08FR 7000 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>479</td>
+                <td>SONDA ALIMENTACAO ENTERAL 10FR 7000 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>480</td>
+                <td>SONDA ALIMENTACAO ENTERAL 12FR 7000 MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>481</td>
+                <td>LUVA VINIL (M) SEM PO C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>482</td>
+                <td>SORBITOL + MANITOL 1000ML HALEXISTAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>489</td>
+                <td>SWAB EST. C/500 HASTE PLASTICA RAYON INDV. NEOLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>490</td>
+                <td>PROTETOR FACIAL FACE SHIELD DELLO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>491</td>
+                <td>TONER COMPATIVEL D116 BK 3K BYQUALY</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>492</td>
+                <td>AVENTAL MANGA LONGA C/10 20G SOFT SCARTARE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>494</td>
+                <td>PANTOPRAZOL (G) 40MG C/28 CPR LEGRAND</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>495</td>
+                <td>CLOREXIDINA 0,2% AQUOSA 1L CHLORCLEAR VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>497</td>
+                <td>ELETRODO ADULTO C/50 MAXICOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>499</td>
+                <td>POLIGLACTINA 3-0 C/AG 2,5 CR C/36 L530MR25 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>POLIESTER TRAC. 3,0 2AG. 1/2 75CM C/24 V302MRV20 SHALON</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>501</td>
+                <td>SCALP 19G C/100 LABOR IMPORT</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>502</td>
+                <td>SCALP 21G C/100 LABOR IMPORT</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>503</td>
+                <td>SCALP 23G C/100 LABOR IMPORT</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>504</td>
+                <td>SCALP 25G C/100 LABOR IMPORT</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>509</td>
+                <td>LAMINA 26X76MM COMUM S/ LAPIDADA CX/50 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>511</td>
+                <td>COLETOR DE URINA 24HORAS 1L S/ALCA CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>512</td>
+                <td>COLETOR DE URINA 24H 2L S/ALCA TRANSL. CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>513</td>
+                <td>COLETOR DE URINA 24HORAS 3L C/ALCA CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>514</td>
+                <td>COLETOR C/PA N/ESTERIL 80ML OPACO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>515</td>
+                <td>COLETOR C/PA N/ESTERIL 50ML OPACO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>516</td>
+                <td>TUBO COL VAC 3,6ML C/ CITRATO DE SODIO C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>517</td>
+                <td>TUBO COL VAC 4ML C/FLUORETO C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>518</td>
+                <td>TUBO COL VAC 1,8ML C/ CITRATO DE SODIO C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>519</td>
+                <td>TUBO COL VAC EM VIDRO 9ML COM HEPARINA C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>520</td>
+                <td>TUBO COL VAC 4ML C/ ATIVADOR COAGULO C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>521</td>
+                <td>TIRA DE PH 0-14 CX C/100 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>522</td>
+                <td>ESCALPE P/COLETA A VACUO 21G CX C/50 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>523</td>
+                <td>ESCALPE P/COLETA A VACUO 23G CX C/50 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>524</td>
+                <td>COLETOR C/PA ESTERIL 50ML TRANSLUCIDO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>525</td>
+                <td>COLETOR C/PA ESTERIL 80ML TRANSLUCIDO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>526</td>
+                <td>COLETOR S/PA ESTERIL 50ML TRANSLUCIDO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>527</td>
+                <td>COLETOR S/PA ESTERIL 80ML TRANSLUCIDO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>528</td>
+                <td>TUBO COL VAC 4ML C/ ATIVADOR DE COAGULO C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>529</td>
+                <td>TUBO COL VAC 10ML C/ JATO ATIVADOR C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>530</td>
+                <td>TUBO COL VAC 4ML C/ REAG. EDTA K3 C/100 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>531</td>
+                <td>LAMINA 26X76MM FOSCA S/ LAPIDADA CX/50 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>532</td>
+                <td>AGULHA A VACUO 25X7 CX C/100 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>533</td>
+                <td>AGULHA A VACUO 25X8 CX C/100 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>534</td>
+                <td>CURATIVO ADESIVO EM ROLO 25MM CX C/500 COPERTINA CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>535</td>
+                <td>CURATIVO ADESIVO INFANTIL EM ROLO 25MM CX C/500 COPERTINA CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>536</td>
+                <td>COLETOR DE URINA INF. 100ML C/100 UNISSEX CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>537</td>
+                <td>COLETOR PERFURO RIGIDO 1L CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>538</td>
+                <td>ESTANTE UNIVERSAL COM VENTOSA P/ TUBOS CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>539</td>
+                <td>FITA P/ AUTOCLAVE 19MMX30M CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>540</td>
+                <td>GARROTE P/FLEBOTOMIA ADULTO CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>541</td>
+                <td>GARROTE P/FLEBOTOMIA INFANTIL CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>542</td>
+                <td>LANCETA ESTERIL CX C/200 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>543</td>
+                <td>TAMPA PRESSAO INTERNA C/1000 12MM CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>544</td>
+                <td>PLACA PS 90X15MM LISA ESTERIL CRALPAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>545</td>
+                <td>PLACA PS 90X15MM COM 1 DIVISAO ESTERIL CRALPAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>546</td>
+                <td>PLACA PS 140X15MM ESTERIL CRALPAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>547</td>
+                <td>PORTA LAMINA PLASTICO P/3 LAMINAS PCT C/100 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>548</td>
+                <td>SACO PARA AUTOCLAVE 60LT 60X80CM PCT C/20 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>549</td>
+                <td>TUBO CONICO PP 12ML CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>550</td>
+                <td>TAMPA PRESSAO INTERNA P/ TUBO C/1000 CONICO PP CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>551</td>
+                <td>ESPECULO VAGINAL (G) EST LUB CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>552</td>
+                <td>LAMINULA DE VIDRO 24X24MM PCT C/1000 CRALPLAST</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>553</td>
+                <td>DEPIMIEL CERA DEPIL VEGETAL 200G</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>554</td>
+                <td>DEPIMIEL FOLHA DEPIL CORP C/16</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>555</td>
+                <td>DEPIMIEL OLEO REMOVEDOR 60ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>556</td>
+                <td>DEPIMIEL CREME INTIMO MEN 95G</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>557</td>
+                <td>ATENOLOL+CLORTA 50+12,5MG C/30CMP EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>558</td>
+                <td>DEPIMIEL CREME FACIAL 40G</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>559</td>
+                <td>DEPIMIEL ROLL ON CLASSICA 100G</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>560</td>
+                <td>SULFAMETOXAZOL+TRIMETOPRIMA BACTRIM 400/80MG C/20CMP FARMOQUIMICA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>561</td>
+                <td>HIDROCLOROTIAZISA 25MG C/ 30CMP SANOFI</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>562</td>
+                <td>HIDROCORTISONA (G) 100MG C/50 F/A BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>563</td>
+                <td>PERMETRINA 1% KWELL SOL 60ML ASPEN</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>564</td>
+                <td>MICROPORE BRANCO 10 X 10 ADPELE MISSNER</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>565</td>
+                <td>MICROPORE BRANCO 2,5 X 10 ADPELE MISSNER</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>566</td>
+                <td>FILME STRETCH 500MM PREMIUM</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>567</td>
+                <td>PLASTICO BOLHA 030 0,60X100 M</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>568</td>
+                <td>PAPEL SULFITE RINO C/500</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>569</td>
+                <td>CAFE 3 CORACOES VACUO EXTRA FORTE 500G</td>
+                <td>USO E CONSUMO</td>
+            </tr>
+            <tr>
+                <td>570</td>
+                <td>CLOREXIDINA 1% 60ML BEM CARE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>571</td>
+                <td>DESCONGESTIONANTE BEM CARE SPRAY 50ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>572</td>
+                <td>DESCONGESTIONANTE BEM CARE 30ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>573</td>
+                <td>AVENTAL MANGA LONGA C/10 NEVE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>574</td>
+                <td>CETOPROFENO (G) 50MG CX C/24 CMP EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>575</td>
+                <td>LUVA PROC LATEX (P) C/100 CREMER</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>576</td>
+                <td>LUVA PROC LATEX (M) C/100 CREMER</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>577</td>
+                <td>PAPEL LENCOL 50X50 ECOLOGIC DESCARBOX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>578</td>
+                <td>PAPEL LENCOL 70X50 ECOLOGIC DESCARBOX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>579</td>
+                <td>PAPEL LENCOL 50X50 PREMIUN DESCARBOX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>580</td>
+                <td>PAPEL LENCOL 70X50 PREMIUN DESCARBOX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>581</td>
+                <td>POWER SEPTIC 5L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>582</td>
+                <td>LUVA PROC LATEX (P) C/1 PAR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>583</td>
+                <td>SERUM VIT C CICLOS 30ML HIDRADERM FARMAX</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>584</td>
+                <td>FLUMAZENIL (G) 0,1MG/ML 5ML C/5 AMP HIPOLABOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>585</td>
+                <td>FR HUGGIES HIPER (M) FARDO C/3 X92</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>586</td>
+                <td>ANSIECHA 60 SACHES CATARINENSE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>587</td>
+                <td>PINTA CABELO AZUL FLUORESCENTE 135ML POPPER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>589</td>
+                <td>ENOXAPARINA HEPARINOX 20MG/0,2ML C/10 CRISTALIA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>590</td>
+                <td>OMEPRAZOL OMENAX 20MG C/490 CAPS GEOLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>591</td>
+                <td>OLEO MINERAL VITA CAPILI BABOSA 80ML MURIEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>592</td>
+                <td>CERA FINALIZADORA CAPIL QUERATINA 40G MURIEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>593</td>
+                <td>OLEO DE AMENDOAS DOCE 100ML MURIEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>594</td>
+                <td>KIT CERA DEPILATORIA GEL POTE MEL 320G MURIEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>595</td>
+                <td>OXACILINA (G) 500MG C/100 FA IM/IV BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>596</td>
+                <td>HEPARINA HEPAMAX-S 5000 UI/ML C/25 FA 5ML BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>597</td>
+                <td>HIDROCORTISONA ARISCORTEN 500MG C/50 FA IV BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>598</td>
+                <td>CIPROFLOXACINO MAXIFLOX 3,5 MG/ML FR 5ML LATINOFARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>599</td>
+                <td>METRONIDAZOL CANDERM 400MG C/20 CPR LEGRAND</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>600</td>
+                <td>TOALHA LUXO ESTAMP BABY SHARK CREMER</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>602</td>
+                <td>TERMOMETRO INFRAVERMELHO E-127 BIOLAND</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>605</td>
+                <td>LUVA NITRILICA (P) C/100 AZUL LUVIX</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>607</td>
+                <td>HIDRATANTE CORP MACAD AMENDOA 500ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>608</td>
+                <td>CR PENTEAR ESS CACHO ROL ENROL 250ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>609</td>
+                <td>CR TRAT AMIDO MILHO+COCO 1KG ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>610</td>
+                <td>OCULOS LEITURA +1.00 VIVENCE</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>611</td>
+                <td>DICLOR MANIDIPINO 10MG C/30 CPR PHARLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>612</td>
+                <td>REP DE PONTAS CACH ROLA OU ENROL 30ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>613</td>
+                <td>KIT SEL REDUTORA TODOS TIPOS CABELO 190ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>614</td>
+                <td>ATIVADOR DE CACHOS SUAVES 500ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>615</td>
+                <td>GEL RED DE VOLUME CACHOS COMPORT 500G ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>616</td>
+                <td>KIT SH+COND EU ESCOLHO CACHOS 300 ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>617</td>
+                <td>DEXCLORFENIRAMINA HYSTIN 2MG C/20 GEOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>618</td>
+                <td>MIDAZOLAM (G) 5MG/ML 3ML C/5 AMP IM/IV/RET TEUTO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>620</td>
+                <td>SPRAY MATIZADOR LOIRO PERFEITO 300ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>621</td>
+                <td>FINALIZADOR MAXILIS COCO+TAMAR 110ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>622</td>
+                <td>SH FOR MEN ANTICASPA 300 ML ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>623</td>
+                <td>TUBO TIPO FALCON 15ML N/E C/50 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>624</td>
+                <td>PAPEL HIG ROLAO BRANCO 300 M PAPELITO</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>626</td>
+                <td>SONDA OROTRAQUEAL 6,0 C/BALÃO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>628</td>
+                <td>SONDA OROTRAQUEAL 8,0 C/BALAO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>629</td>
+                <td>SONDA OROTRAQUEAL 7,0 C/BALAO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>631</td>
+                <td>PONTEIRA TIPO GILSON 200-1000UL C/1000 CRAL</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>632</td>
+                <td>POMADA MOD BRILHO 100G ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>634</td>
+                <td>LIDOCAINA LABCAINA 2% GELEIA 30G PHARLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>635</td>
+                <td>KIT ALISANTE NOW FLORES E FRUTAS ORIGEM</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>636</td>
+                <td>DEFRIZANTE OLEO DE ARGAN 400G RAVOR</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>639</td>
+                <td>SONDA ENDOTRAQUEAL 5,0 C/BL RUSCH</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>641</td>
+                <td>ATIVADOR DE ESCOVA BIF 110ML RAVOR</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>643</td>
+                <td>BROM. ROCURONIO 50MG/5ML C/12 F/A EUROFARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>644</td>
+                <td>KIT ESCOVA PROGRESSIVA SFERA 2017 NAZCA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>647</td>
+                <td>QUERATINA LÍQUIDA 500ML SFERA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>649</td>
+                <td>TUBO OXIGENIO SILICONE N/EST 15M FRISADO 6X10MM MEDICONE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>653</td>
+                <td>EMISTIN C/20 CPR EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>654</td>
+                <td>GEROVITAL C/60 CPS EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>655</td>
+                <td>DTC COD 2768 OVO SURPRESA HELLO C/24</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>656</td>
+                <td>NARIDRIN E 12HS 30ML GTS EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>657</td>
+                <td>NOCICLIN C/21 CPR EMS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>660</td>
+                <td>SUPLEVIT MULHER C/60 CPS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>661</td>
+                <td>BISMUJET E SUSP ORAL 20 ML</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>662</td>
+                <td>DORILEN E C/12 CPR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>665</td>
+                <td>SONDA OROTRAQUEAL 5,0 C/BALAO RUSCH</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>668</td>
+                <td>CATETER 24G SOLIDOR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>669</td>
+                <td>ESCOVA CERVICAL C/100 N/EST VAGISPEC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>671</td>
+                <td>SUPORTE P/ PAPEL TOALHA BRANCO</td>
+                <td>MULTICANAL</td>
+            </tr>
+            <tr>
+                <td>672</td>
+                <td>SONDA ENDOTRAQUEAL 6,5 C/BL DAHLHA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>673</td>
+                <td>CATETER INSYTE 18G BD </td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>682</td>
+                <td>AMPICILINA CILINON 500MG C/100 FR/AMP I.M/I.V BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>683</td>
+                <td>IBUFLEX E 400MG C/08</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>686</td>
+                <td>PREVIANE C/21 CPR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>690</td>
+                <td>FIXADOR CITOLOGICO KOLPOFIX 100ML SPRAY KO</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>691</td>
+                <td>SONDA OROTRAQUEAL 8,0 C/BALAO RUSCH</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>692</td>
+                <td>LAMINA BISTURI CARB N11 C/100 ADVANTIVE</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>693</td>
+                <td>REPOFLOR E 200MG C/06 CPS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>694</td>
+                <td>REPOPIL C/21 CPR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>695</td>
+                <td>REPOPIL C/63 CPR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>696</td>
+                <td>HISTAMIN SOL ORAL 100 ML</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>704</td>
+                <td>AGULHA C/DISP SEG 25X6 C/100 BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>709</td>
+                <td>CATETER INSYTE C/DISP DE SEG 22G 38182314 BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>710</td>
+                <td>SCALP C/DISP SEG 21G 38734614 BD</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>711</td>
+                <td>MAGNOSTASE 02MG C/12 CPR</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>712</td>
+                <td>NEOCOPAN COMPOSTO 20 ML GTS</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>713</td>
+                <td>CR PENT AQUA KIDS LIS 250ML VEG NAZCA</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>714</td>
+                <td>SONDA RETAL N 08 MARKMED</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>715</td>
+                <td>SONDA RETAL N 12 MARKMED</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>716</td>
+                <td>SONDA RETAL N 14 MARKMED</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>717</td>
+                <td>SONDA RETAL N 16 MARKMED</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>718</td>
+                <td>FIXA DERME COLAGENO+VIT C Q10 C/15</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>719</td>
+                <td>INOVE CALCIO MASTIGAVEL</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>721</td>
+                <td>IVERMECTINA 6MG (G) 4CPR VITAMEDIC</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>722</td>
+                <td>IVERMECTINA 6MG (G) BLISTER C/4CPR VITAMEDIC</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>723</td>
+                <td>DIOSMINA + HESPERIDINA C/30 BIOLAB</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>724</td>
+                <td>ZINCO 20MG C/30 BIOLAB</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>725</td>
+                <td>TIOCOLCHICOSIDEO (G) 4MG 2ML C/3AMP BLAU</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>726</td>
+                <td>MICROCOMPUTADOR NTC PC I3 4135 SSD</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>727</td>
+                <td>MICROCOMPUTADOR NTC PC I5 8130 SSD</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>728</td>
+                <td>PLACA MAE ASROCK H310CM-HG4</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>729</td>
+                <td>MEMORIA BALLISTIX SPORTS LT 8GB DDR4 3000 MHZ</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>730</td>
+                <td>FINI AMORAS 90G CX C/12</td>
+                <td>FARMA</td>
+            </tr>
+            <tr>
+                <td>731</td>
+                <td>DETERGENTE ENZIMATICO POWER 5L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>732</td>
+                <td>CLOREXIDINA 2% ALCOOLICA 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>733</td>
+                <td>CLOREXIDINA 2% ALCOOLICA 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>734</td>
+                <td>CLOREXIDINA 2% SOL AQUOSA 100ML VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>735</td>
+                <td>CLOREXEDINA 2% SOL AQUOSA 1L VICPHARMA</td>
+                <td>HOSPITALAR</td>
+            </tr>
+            <tr>
+                <td>737</td>
+                <td>FINI CHICLE KLETS MENTA C/12 30G</td>
+                <td>FARMA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Código Brazmix</th>
+                <th>Descrição</th>
+                <th>Linha</th>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        $(document).ready(function () {
+            dTable = $('#dadosprod').DataTable({
+                "lengthMenu": [
+                    [50, 100, 200, -1],
+                    [50, 100, 200, "Todas"]
+                ],
+                "dom": "lrtip",
+                "bLengthChange": false
+            });
+        });
+
+        $('#myCustomSearchBox').keyup(function () {
+            dTable.search($(this).val()).draw();
+        })
+    </script>
+</body>
+
+</html>
