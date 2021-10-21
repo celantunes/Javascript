@@ -1,0 +1,373 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+
+            <input type="text" id="myCustomSearchBox" class="form-control" style="font-size: 24px; border-radius: 10px; text-align: center;"
+                placeholder="Encontre a loja mais próxima de você!! Faça sua pesquisa aqui!!!">
+        </div>
+    </div>
+    <table id="dadosprod" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Loja</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>CEP</th>
+                <th>Cidade</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Irai 1</td>
+                <td>Av Irai, 916</td>
+                <td>Weissopolis</td>
+                <td>83321000</td>
+                <td>Pinhais</td>
+                <td>3139-4993</td>
+            </tr>
+            <tr>
+                <td>Maria Antonieta</td>
+                <td>Av Maria Antonieta dos Santos, 365</td>
+                <td>Maria Antonieta</td>
+                <td>83321000</td>
+                <td>Pinhais</td>
+                <td>3139-4995</td>
+            </tr>
+            <tr>
+                <td>Roça Grande</td>
+                <td>Rodovia da Uva, 1360</td>
+                <td>Roça Grande</td>
+                <td>83402000</td>
+                <td>Colombo</td>
+                <td>3139-4990</td>
+            </tr>
+            <tr>
+                <td>Anita</td>
+                <td>Av Anita Garibaldi, 5585</td>
+                <td>Barreirinha</td>
+                <td>82220000</td>
+                <td>Curitiba</td>
+                <td>3139-5091</td>
+            </tr>
+            <tr>
+                <td>Atuba</td>
+                <td>Rua Abel Scuissiato, 2930</td>
+                <td>Atuba</td>
+                <td>83408280</td>
+                <td>Colombo</td>
+                <td>3139-4992</td>
+            </tr>
+            <tr>
+                <td>Irai 2</td>
+                <td>Av Irai, 895</td>
+                <td>Weissopolis</td>
+                <td>83321000</td>
+                <td>Pinhais</td>
+                <td>3139-4994</td>
+            </tr>
+            <tr>
+                <td>Pinheirinho</td>
+                <td>Av Wiston Churchiu, 1972</td>
+                <td>Pinheirinho</td>
+                <td>81150050</td>
+                <td>Curitiba</td>
+                <td>3139-4996</td>
+            </tr>
+            <tr>
+                <td>Maracanã</td>
+                <td>Rua Abel Scuissiato, 390</td>
+                <td>Maracanã</td>
+                <td>83408280</td>
+                <td>Colombo</td>
+                <td>3139-5035</td>
+            </tr>
+            <tr>
+                <td>Piraquara</td>
+                <td>Rua Betonex, 1893</td>
+                <td>Guarituba</td>
+                <td>83314180</td>
+                <td>Piraquara</td>
+                <td>3139-5030</td>
+            </tr>
+            <tr>
+                <td>Tingui</td>
+                <td>Av Monteiro Tourinho, 478</td>
+                <td>Tingui</td>
+                <td>82600000</td>
+                <td>Curitiba</td>
+                <td>3139-5090</td>
+            </tr>
+            <tr>
+                <td>Sao Jose Centro</td>
+                <td>Rua Barao Do Cerro Azul, 1235</td>
+                <td>Centro</td>
+                <td>83005430</td>
+                <td>Sao Jose dos Pinhais</td>
+                <td>3139-5045</td>
+            </tr>
+            <tr>
+                <td>Jardim Paulista</td>
+                <td>Rua Leonardo Francischelli, 234</td>
+                <td>Jardim Paulista</td>
+                <td>83430000</td>
+                <td>Campina Grande do Sul</td>
+                <td>3139-5087</td>
+            </tr>
+            <tr>
+                <td>Sítio Cercado</td>
+                <td>Rua Izaac Ferreira da Cruz, 2719</td>
+                <td>Sitio Cercado</td>
+                <td>81870000</td>
+                <td>Curitiba</td>
+                <td>3139-5088</td>
+            </tr>
+            <tr>
+                <td>Santa Cândida</td>
+                <td>Estrada Santa Cândida, 41</td>
+                <td>Santa Cândida</td>
+                <td>82630490</td>
+                <td>Curitiba</td>
+                <td>3139-4997</td>
+            </tr>
+            <tr>
+                <td>Bairro Alto</td>
+                <td>Rua Alberico Flores Bueno, 424</td>
+                <td>Bairro Alto</td>
+                <td>82840170</td>
+                <td>Curitiba</td>
+                <td>3139-5033</td>
+            </tr>
+            <tr>
+                <td>Centro Colombo</td>
+                <td>Rua Francisco Busato, 8079</td>
+                <td>Centro</td>
+                <td>83414290</td>
+                <td>Colombo</td>
+                <td>3139-5085</td>
+            </tr>
+            <tr>
+                <td>Jacob</td>
+                <td>Av Jacob Macanham, 569</td>
+                <td>Centro</td>
+                <td>83320352</td>
+                <td>Pinhais</td>
+                <td>3139-5030</td>
+            </tr>
+            <tr>
+                <td>Santa Rita</td>
+                <td>Enette Dubard, 545</td>
+                <td>Tatuquara</td>
+                <td>81470075</td>
+                <td>Curitiba</td>
+                <td>3289-8265</td>
+            </tr>
+            <tr>
+                <td>Guaratuba</td>
+                <td>Rua Jose Nicolau Abagge, 3687</td>
+                <td>Centro</td>
+                <td>83280000</td>
+                <td>Guaratuba</td>
+                <td>3139-5034</td>
+            </tr>
+            <tr>
+                <td>Araucaria Rio Verde</td>
+                <td>Rodovia Br-476</td>
+                <td>Estação</td>
+                <td>83705177</td>
+                <td>Araucaria</td>
+                <td>3139-5037</td>
+            </tr>
+            <tr>
+                <td>Capela Velha</td>
+                <td>Gralha-Azul, 568</td>
+                <td>Capela Velha</td>
+                <td>83706250</td>
+                <td>Araucaria</td>
+                <td>3139-5081</td>
+            </tr>
+            <tr>
+                <td>Caioba</td>
+                <td>Av Jk  De Oliveira, s/n</td>
+                <td>Centro</td>
+                <td>83260000</td>
+                <td>Caioba</td>
+                <td>3139-5084</td>
+            </tr>
+            <tr>
+                <td>Campo Largo</td>
+                <td>Avenida Desembargador Clotário Portugal, 574</td>
+                <td>Centro</td>
+                <td>83601320</td>
+                <td>Campo Largo</td>
+                <td>3139-5092</td>
+            </tr>
+            <tr>
+                <td>Campo Largo Centro</td>
+                <td>Rua Centenario, 2035</td>
+                <td>Centro</td>
+                <td>83601000</td>
+                <td>Campo Largo</td>
+                <td>3139-5039</td>
+            </tr>
+            <tr>
+                <td>Sao Jose</td>
+                <td>Rua Joinville, 3483</td>
+                <td>Sao Pedro</td>
+                <td>83020000</td>
+                <td>Sao Jose dos Pinhais</td>
+                <td>3139-5042</td>
+            </tr>
+            <tr>
+                <td>Jardim Social</td>
+                <td>Fagundes Varela, 1487</td>
+                <td>Jardim Social</td>
+                <td>82520702</td>
+                <td>Curitiba</td>
+                <td>3139-5038</td>
+            </tr>
+            <tr>
+                <td>Fazenda</td>
+                <td>Rua Francisco Caudino Dos Santos, 151</td>
+                <td>Iguacu</td>
+                <td>83833070</td>
+                <td>Fazenda Rio Grande</td>
+                <td>3139-5095</td>
+            </tr>
+            <tr>
+                <td>Bairro Alto 2</td>
+                <td>Rua Jose de Oliveira Franco, 2796</td>
+                <td>Bairro Alto</td>
+                <td>82820295</td>
+                <td>Curitiba</td>
+                <td>3139-5096</td>
+            </tr>
+            <tr>
+                <td>Kennedy</td>
+                <td>AV PRESIDENTE KENEDY, 1175</td>
+                <td>PAROLIN</td>
+                <td>80220201</td>
+                <td>Curitiba</td>
+                <td>3333-3003</td>
+            </tr>
+            <tr>
+                <td>Hauer</td>
+                <td>Rua das Carmelitas, 425</td>
+                <td>Hauer</td>
+                <td>81610070</td>
+                <td>Curitiba</td>
+                <td>3139-4999</td>
+            </tr>
+            <tr>
+                <td>Boa Vista</td>
+                <td>Fernando de Noronha, 116 - lj 01</td>
+                <td>Santa Cândida</td>
+                <td>82640350</td>
+                <td>Curitiba</td>
+                <td>3256-0505</td>
+            </tr>
+            <tr>
+                <td>Campo Magro</td>
+                <td>Rod. Eng. Ângelo Lopes, 13148</td>
+                <td>Jardim Cecilia</td>
+                <td>83535000</td>
+                <td>Campo Magro</td>
+                <td>4104-0777</td>
+            </tr>
+            <tr>
+                <td>Lodovico Geronazzo</td>
+                <td>Rua Lodovico Geronazzo, 601</td>
+                <td>Boa Vista</td>
+                <td>82560040</td>
+                <td>Curitiba</td>
+                <td>3023-5865</td>
+            </tr>
+            <tr>
+                <td>Seminario</td>
+                <td>Av. Nossa Senhora Aparecida, 1089</td>
+                <td>Seminário</td>
+                <td>80310310</td>
+                <td>Curitiba</td>
+                <td>3274-0058</td>
+            </tr>
+            <tr>
+                <td>Fazendinha</td>
+                <td>Rua carlos klemtz, 1621</td>
+                <td>Fazendinha</td>
+                <td>81320000</td>
+                <td>Curitiba</td>
+                <td>3245-0125</td>
+            </tr>
+            <tr>
+                <td>Santa Terezinha</td>
+                <td>Av. Marginal Direita, 378</td>
+                <td>Santa Terezinha</td>
+                <td>83408600</td>
+                <td>Colombo</td>
+                <td>3139-4962</td>
+            </tr>
+            <tr>
+                <td>Boqueirão Terminal</td>
+                <td>Av. Marechal Floriano Peixoto, 10219</td>
+                <td>Boqueirão</td>
+                <td>81730010</td>
+                <td>Curitiba</td>
+                <td>3139-4963</td>
+            </tr>
+            <tr>
+                <td>Borda do Campo</td>
+                <td>Rua Canoinhas, 255</td>
+                <td>Centro</td>
+                <td>83075050</td>
+                <td>São José dos Pinhais</td>
+                <td>3139-4965</td>
+            </tr>
+            <tr>
+                <td>BR 116</td>
+                <td>Rodovia BR 116, 17518</td>
+                <td>Xaxim</td>
+                <td>81690300</td>
+                <td>Curitiba</td>
+                <td>3139-4964</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Loja</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>CEP</th>
+                <th>Cidade</th>
+                <th>Telefone</th>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        $(document).ready(function () {
+            dTable = $('#dadosprod').DataTable({
+                "lengthMenu": [
+                    [50, 100, 200, -1],
+                    [50, 100, 200, "Todas"]
+                ],
+                "dom": "lrtip",
+                "bLengthChange": false
+            });
+        });
+
+        $('#myCustomSearchBox').keyup(function () {
+            dTable.search($(this).val()).draw();
+        })
+    </script>
+</body>
+
+</html>
